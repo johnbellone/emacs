@@ -5,7 +5,8 @@
   (load "local"))
 
 (load "jb/defaults")
+(load "jb/functions")
 
 ; External packages usually git submodules.
-(load "vendor/git-emacs/git-emacs")
+(vendor 'git-emacs)
 
