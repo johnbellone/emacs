@@ -9,7 +9,7 @@
 (setq-default make-backup-files nil)
 
 (prefer-coding-system 'utf-8)
-(cua-mode nil)
+(cua-mode 0)
 
 (column-number-mode t)
 (blink-cursor-mode 0)
