@@ -19,3 +19,8 @@
 
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
+
+(defun make-backup-file-name (file)
+  (concat "~/.emacs.d/backups" (file-name-nondirectory-file) "~"))
+
+(setq make-backup-files nil)
