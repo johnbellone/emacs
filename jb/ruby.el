@@ -18,7 +18,7 @@
 (add-to-list 'auto-mode-alist '("\\Vagrantfile$" . ruby-mode))
 
 ;; Ignore extensions
-(add-to-list 'completion-ignored-extensions ".rbc"))
+(add-to-list 'completion-ignored-extensions ".rbc")
 
 ;; Rake
 (defun pcomplete/rake ()

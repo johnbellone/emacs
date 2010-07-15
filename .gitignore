@@ -3,3 +3,4 @@ local.el
 *.elc
 auto-save-list
 *~
+tramp
