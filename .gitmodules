@@ -1,6 +1,3 @@
 [submodule "vendor/git-emacs"]
 	path = vendor/git-emacs
 	url = git://github.com/tsgates/git-emacs.git
-[submodule "vendor/rspec-mode"]
-	path = vendor/rspec-mode
-	url = git://github.com/pezra/rspec-mode.git
