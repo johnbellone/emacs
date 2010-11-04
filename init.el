@@ -1,6 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d")
 
+(ignore-errors (load "local"))
+
 (load "jb")
 
-(when (file-exists-p "local")
-  (load "local"))
+

@@ -17,9 +17,25 @@
 (mouse-wheel-mode t)
 (scroll-bar-mode 0)
 
+;; Tramp default to scp
+(setq tramp-default-method "scp")
+
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
 
 (when (equal system-type 'darwin)
   (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
   (push "/usr/local/bin" exec-path))
+
+;; Kill the Emacs backups junk
+(defun make-backup-file-name (file)
+  (concat "~/.emacs.d/backups" (file-name-nondirectory-file) "~"))
+(setq make-backup-files nil)
+
+; Enable font lock
+;; Source: http://www.gnu.org/software/emacs/windows/faq4.html#font-lock
+(when (fboundp 'global-font-lock-mode)
+  (require 'font-lock)
+  (setq font-lock-maximum-decoration t)
+  (global-font-lock-mode t))
+
