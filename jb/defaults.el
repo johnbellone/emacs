@@ -19,3 +19,7 @@
 
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
+
+(when (equal system-type 'darwin)
+  (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+  (push "/usr/local/bin" exec-path))
