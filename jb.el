@@ -11,3 +11,4 @@
 (vendor 'rhtml-mode)
 (vendor 'yaml-mode)
 (vendor 'color-theme)
+(vendor 'mode-compile)
