@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <10/08/11 19:40:12 /Users/jbellone/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <11/01/23 16:05:57 /Users/jbellone/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -27,4 +27,27 @@
   ("local-encoding" base64-encode-region)
   ("local-decoding" base64-decode-region)
   ("remote-encoding" "base64")
-  ("remote-decoding" "base64 -d")))
+  ("remote-decoding" "base64 -d"))
+ (["scp" "jbellone" "thunkbrightly.com" nil]
+  ("uname" "Linux 2.6.24-23-xen")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("~" "/home/jb")
+  ("file-exists" "test -e")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 50)
+  ("readlink" "\\readlink")
+  ("local-encoding" base64-encode-region)
+  ("local-decoding" base64-decode-region)
+  ("remote-encoding" "base64")
+  ("remote-decoding" "base64 -d -i")
+  ("trash" nil)
+  ("uid-integer" 1000)))
