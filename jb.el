@@ -12,3 +12,4 @@
 (vendor 'yaml-mode)
 (vendor 'color-theme)
 (vendor 'mode-compile)
+(vendor 'rinari)
