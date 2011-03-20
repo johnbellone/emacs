@@ -8,7 +8,6 @@
 ; External packages usually git submodules.
 (vendor 'git-emacs)
 (vendor 'rspec-mode)
-(vendor 'rhtml-mode)
 (vendor 'yaml-mode)
 (vendor 'color-theme)
 (vendor 'mode-compile)
