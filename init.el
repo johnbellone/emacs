@@ -5,6 +5,6 @@
      (expand-file-name "~/.emacs.d/elpa/package.el"))
   (package-initialize))
 
-(ignore-errors (load "local"))
-
 (load "jb")
+
+(ignore-errors (load "local"))

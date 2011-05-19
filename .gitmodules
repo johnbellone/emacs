@@ -4,3 +4,6 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = https://github.com/eschulte/rinari.git
+[submodule "vendor/rhtml-mode"]
+	path = vendor/rhtml-mode
+	url = https://github.com/eschulte/rhtml.git
