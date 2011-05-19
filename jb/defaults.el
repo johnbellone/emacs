@@ -16,7 +16,7 @@
 (show-paren-mode t)
 (mouse-wheel-mode t)
 (ignore-errors 
- (scroll-bar-mode f))
+ (scroll-bar-mode 0))
 
 ;; Tramp default to scp
 (setq tramp-default-method "scp")
