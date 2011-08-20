@@ -1665,4 +1665,6 @@ frame-parameter settings of previous color themes."
 
 (provide 'color-theme)
 
+(load "themes/color-theme-tangotango")
+
 ;;; color-theme.el ends here
