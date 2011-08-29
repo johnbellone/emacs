@@ -6,7 +6,6 @@
 (load "jb/c")
 (load "jb/php")
 
-; External packages usually git submodules.
 (vendor 'git-emacs)
 (vendor 'rspec-mode)
 (vendor 'yaml-mode)
@@ -16,4 +15,4 @@
 (vendor 'multi-mode)
 (vendor 'php-mode)
 
-(color-theme-tangotango)
+(color-theme-twilight)
