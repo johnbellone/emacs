@@ -10,3 +10,6 @@
      ((file-exists-p suffix) (require library)))
     (when (file-exists-p (concat defunkt ".el"))
       (load defunkt))))
+(defun newline-and-indent-relative ()
+  "Insert a newline, then indent relative to the previous line."
+  (interactive "*") (newline) (indent-relative))
