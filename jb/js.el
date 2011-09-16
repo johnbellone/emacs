@@ -1,0 +1,36 @@
+(add-to-list 'auto-mode-alist '("\\.js$" . espresso-mode))
+
+(defun js2-indent-function ()
+  (interactive)
+  (save-restriction
+    (widen)
+    (let* ((inhibit-point-motion-hooks t)
+           (parse-status (save-excursion (syntax-ppss (point-at-bol))))
+           (offset- (- (current-column) (current-indentation)))
+           (indentation (expresso-proper-indentation parse-status))
+           node)
+      (save-restriction
+        (back-to-indentation)
+        (if (looking-at "case\\s-")
+            (setq indentation (+ indentation (/ expresso-indent-level 2))))
+        (if (looking-at "function\\s-")
+            (setq indentation (+ indentation (/ expresso-indent-level 1))))
+        (setq node (js2-node-at-point))
+        (when (and node
+                   (= js2-NAME (js2-node-type node))
+                   (= js2-VAR (js2-node-type (js2-node-parent node))))
+          (setq indentation (+ 4 indentation))))
+      (indent-line-to indentation)
+      (when (> offset 0) (forward-char offset)))))
+
+(add-hook 'js2-mode-hook
+          '(lambda ()
+             (if (featurep 'js2-highlight-vars)
+                 (js2-highlight-vars-mode))
+             (setq espresso-indent-level 4)
+             (indent-tabs-mode nil)
+             (local-set-key [(backspace)] 'c-electric-backspace)
+             (local-set-key (kbd "TAB") 'tab-to-tab-stop)
+             (local-set-key (kbd "C-d") 'c-electric-delete-forward)             
+             (local-set-key (kbd "RET") 'newline-and-indent)
+             (local-set-key (kbd "C-m") 'newline-and-indent)))

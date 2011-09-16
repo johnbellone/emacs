@@ -14,5 +14,6 @@
 (vendor 'rinari)
 (vendor 'multi-mode)
 (vendor 'php-mode)
+(vendor 'js2-mode)
 
 (color-theme-twilight)

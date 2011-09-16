@@ -24,7 +24,6 @@
 (add-hook 'c-mode-common-hook
           '(lambda ()
              (c-set-style "user")
-             (no-case-fold-search)
              (setq tab-width 4
                    indent-tabs-mode nil)
              (setq c-basic-offset 4)
