@@ -1,5 +1,3 @@
-(add-to-list 'auto-mode-alist '("\\.js$" . espresso-mode))
-
 (defun js2-indent-function ()
   (interactive)
   (save-restriction

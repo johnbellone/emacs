@@ -15,5 +15,6 @@
 (vendor 'multi-mode)
 (vendor 'php-mode)
 (vendor 'js2-mode)
+(vendor 'google-c-style)
 
 (color-theme-twilight)
