@@ -12,7 +12,7 @@
 (vendor 'color-theme)
 (vendor 'mode-compile)
 (vendor 'rinari)
-(vendor 'multi-mode)
+;;(vendor 'multi-mode)
 (vendor 'php-mode)
 (vendor 'js2-mode)
 (vendor 'google-c-style)

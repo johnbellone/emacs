@@ -7,6 +7,3 @@
 [submodule "vendor/rhtml-mode"]
 	path = vendor/rhtml-mode
 	url = https://github.com/eschulte/rhtml.git
-[submodule "vendor/multi-mode"]
-	path = vendor/multi-mode
-	url = https://github.com/deactivated/multi-mode.git
