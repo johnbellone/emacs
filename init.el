@@ -1,6 +1,7 @@
-(add-to-list 'load-path "~/emacs")
+(add-to-list 'load-path "~/.emacs.d")
 
-(load "sources")
+(load "packages")
 (load "global")
+(load "modes")
 
 (ignore-errors (load "local"))
