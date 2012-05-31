@@ -1,5 +1,6 @@
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/emacs")
 
-(load "jb")
+(load "sources")
+(load "global")
 
 (ignore-errors (load "local"))
