@@ -1,9 +1,0 @@
-[submodule "vendor/git-emacs"]
-	path = vendor/git-emacs
-	url = git://github.com/tsgates/git-emacs.git
-[submodule "vendor/rinari"]
-	path = vendor/rinari
-	url = https://github.com/eschulte/rinari.git
-[submodule "vendor/rhtml-mode"]
-	path = vendor/rhtml-mode
-	url = https://github.com/eschulte/rhtml.git
