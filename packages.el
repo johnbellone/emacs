@@ -1,3 +1,8 @@
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
 (defun package-require-install (package)
   "Install a package if it is not already available."
   (when (not (require package nil t))
