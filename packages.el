@@ -3,16 +3,16 @@
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-(defun package-require-install (package)
-  "Install a package if it is not already available."
+(defun require-package (package)
+  "Require the installation of a package if it is not available."
   (when (not (require package nil t))
     (package-install package)))
 
-(package-require-install 'clojure-mode)
-(package-require-install 'cmake-mode)
-(package-require-install 'dired+)
-(package-require-install 'highline)
-(package-require-install 'js2-mode)
-(package-require-install 'less-css-mode)
-(package-require-install 'load-dir)
-(package-require-install 'markdown-mode)
+(require-package 'clojure-mode)
+(require-package 'cmake-mode)
+(require-package 'dired+)
+(require-package 'highline)
+(require-package 'js2-mode)
+(require-package 'less-css-mode)
+(require-package 'load-dir)
+(require-package 'markdown-mode)
