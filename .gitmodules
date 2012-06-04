@@ -1,3 +1,9 @@
 [submodule "custom-themes/color-theme-solarized"]
 	path = custom-themes/color-theme-solarized
 	url = https://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "custom-themes/zenburn-emacs"]
+	path = custom-themes/zenburn-emacs
+	url = https://github.com/bbatsov/zenburn-emacs
+[submodule "custom-themes/twilight-theme"]
+	path = custom-themes/twilight-theme
+	url = https://github.com/nhunzaker/twilight-theme
