@@ -3,6 +3,7 @@
 (load "packages")
 (load "global")
 (load "modes")
+(load "themes")
 
 ;; Custom settings only for this instance/machine of emacs
 (ignore-errors (load "local"))
