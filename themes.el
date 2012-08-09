@@ -1,4 +1,4 @@
-(let ((themes "~/emacs/custom-themes"))
+(let ((themes "~/.emacs.d/custom-themes"))
   (add-to-list 'custom-theme-load-path themes)
   (dolist (f (directory-files themes))
     (let ((name (concat themes "/" f)))
