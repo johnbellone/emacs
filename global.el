@@ -36,5 +36,4 @@
   (setq font-lock-maximum-decoration t)
   (global-font-lock-mode t))
 
-(load "functions")
 

@@ -1,9 +1,11 @@
 ;; Use this file to load the environment. Sometimes scripts install garbage
 ;; to the dotemacs file which is what init.el symbolizes.
-(load "packages")
+(load "functions")
+(load "external")
 (load "global")
 (load "modes")
 (load "themes")
+(load "vendor")
 
-;; Custom settings only for this instance/machine of emacs
-(ignore-errors (load "local"))
+
+
