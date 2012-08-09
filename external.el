@@ -1,7 +1,7 @@
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
+(package-list-packages)
 
 (defun require-package (package)
   "Require the installation of a package if it is not available."
@@ -16,3 +16,5 @@
 (require-package 'less-css-mode)
 (require-package 'load-dir)
 (require-package 'markdown-mode)
+(require-package 'lua-mode)
+(require-package 'auto-complete)

@@ -7,6 +7,3 @@
 [submodule "custom-themes/twilight-theme"]
 	path = custom-themes/twilight-theme
 	url = https://github.com/nhunzaker/twilight-theme
-[submodule "vendor/auto-complete"]
-	path = vendor/auto-complete
-	url = http://github.com/m2ym/auto-complete
