@@ -1,7 +1,7 @@
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-list-packages)
+(package-initialize)
 
 (defun require-package (package)
   "Require the installation of a package if it is not available."
@@ -18,3 +18,6 @@
 (require-package 'markdown-mode)
 (require-package 'lua-mode)
 (require-package 'auto-complete)
+(require-package 'gccsense)
+(require-package 'solarized-theme)
+(require-package 'color-theme-sanityinc-solarized)
