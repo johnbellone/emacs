@@ -5,7 +5,7 @@
 (load "global")
 (load "modes")
 (load "themes")
-(load "vendor")
+
 
 
 
