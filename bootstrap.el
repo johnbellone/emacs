@@ -4,7 +4,6 @@
 (load "external")
 (load "global")
 (load "modes")
-(load "themes")
 
 
 
