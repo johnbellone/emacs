@@ -22,3 +22,4 @@
 (require-package 'solarized-theme)
 (require-package 'color-theme-sanityinc-solarized)
 (require-package 'highlight-80+)
+(require-package 'yaml-mode)
