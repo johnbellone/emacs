@@ -1,3 +1,7 @@
-
-;; Ignore extensions
+(add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Guardfile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("[.]ru$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("[.]rdoc$" . markdown-mode))
+(add-to-list 'auto-mode-alist '("[.]yml$" . yaml-mode))
 (add-to-list 'completion-ignored-extensions ".rbc")
