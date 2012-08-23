@@ -16,5 +16,6 @@
 (prefer-coding-system 'utf-8)
 
 (tool-bar-mode -1)
+(menu-bar-mode -1)
 
 (global-font-lock-mode t)
