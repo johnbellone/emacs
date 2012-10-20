@@ -11,8 +11,6 @@
 
 (cua-mode 0)
 (show-paren-mode t)
-(mouse-wheel-mode t)
-(scroll-bar-mode 0)
 (prefer-coding-system 'utf-8)
 
 (tool-bar-mode -1)
