@@ -4,7 +4,7 @@
 (load "php/php-mode")
 (load "ruby/ruby-mode")
 
-(setq-default linum-format "%5d ")
+(setq-default linum-format "%5d ")                                                    
 ;(global-hl-line-mode t)
 ;(hl-line-mode t)
-;(highlight-80+-mode t)
+(highlight-80+-mode t)
