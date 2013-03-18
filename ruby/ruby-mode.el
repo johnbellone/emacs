@@ -3,9 +3,15 @@
 (add-to-list 'auto-mode-alist '("Guardfile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Vagrantfile" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Cheffile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("[.]ru$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("[.]god$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("[.]rdoc$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("[.]yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("[.]yaml$" . yaml-mode))
 (add-to-list 'completion-ignored-extensions ".rbc")
+
+(add-hook 'ruby-mode-hook 
+          (lambda()
+            (fic-ext-mode)
+            (ruby-end-mode)))

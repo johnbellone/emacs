@@ -15,6 +15,10 @@
 (scroll-bar-mode 0)
 (prefer-coding-system 'utf-8)
 
+(setq-default linum-format "%5d ")                                                    
+;(global-auto-complete-mode t)
+(highlight-80+-mode t)
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
