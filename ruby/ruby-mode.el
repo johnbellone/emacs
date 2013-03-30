@@ -1,3 +1,8 @@
+(require-package 'coffee-mode)
+(require-package 'ruby-end)
+;(require-package 'inf-ruby)
+(require-package 'yaml-mode)
+
 (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Guardfile" . ruby-mode))
@@ -15,3 +20,4 @@
           (lambda()
             (fic-ext-mode)
             (ruby-end-mode)))
+(ruby-electric-mode -1)
