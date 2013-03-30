@@ -1,6 +1,6 @@
 (require-package 'coffee-mode)
 (require-package 'ruby-end)
-;(require-package 'inf-ruby)
+(require-package 'inf-ruby)
 (require-package 'yaml-mode)
 
 (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
@@ -16,8 +16,7 @@
 (add-to-list 'auto-mode-alist '("[.]yaml$" . yaml-mode))
 (add-to-list 'completion-ignored-extensions ".rbc")
 
-(add-hook 'ruby-mode-hook 
+(add-hook 'ruby-mode-hook
           (lambda()
             (fic-ext-mode)
             (ruby-end-mode)))
-(ruby-electric-mode -1)
